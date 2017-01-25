@@ -1,7 +1,7 @@
 # TRiWS
 Tandem Repeats in Weighted Sequences
 
-MSc Individual Project at King's College London 
+Below are extracts from my MSc Individual Project at King's College London 
 
 
 "Tandem repeat is a consecutively repeated string which is not empty. For e.g. www, 0101, and
@@ -43,7 +43,7 @@ Simple template was considered, according to examples from previous chapters, wi
 Each position i in sequence x is separated from next by “;” symbol, making it possible to process each concerning different types of data. Taking into account that positions that show only letters are having occurrence probability equal to 1, numbers and missing syntax will be added
 After syntax corrections are made, next step is present each element as an object that we can address. We use Python’s built-in eval() function for this purpose, which evaluates a given string as pure Python expression.
 Above manipulations result in list of lists of tuples, where each nested list is position x[i] of the string, and each tuple is a letter with its given occurrence probability. While first reason for using tuples as (letter, occurrence) pairs resulted from syntax itself, it was decided to use this model further. Main reason is tuples are, unlike lists, immutable, which gives us additional safety over accidental modifications.
-At this point, we successfully read our sequence and made it available for further manipulations. Next, we implement second module naivestrcr.py, which allows us to find the maximal repetition in a given string. Algorithm uses the idea of naïve implementation of Crochemore’s algorithm, following chapter 4.5.1. At the current moment, naivestrcr.py is the only module that uses additional library – we import Python’s re library, which allows us to use regular expressions within our code.
+At this point, we successfully read our sequence and made it available for further manipulations. Next, we implement second module naivestrcr.py, which allows us to find the maximal repetition in a given string. Algorithm uses the idea of naïve implementation of Crochemore’s algorithm. At the current moment, naivestrcr.py is the only module that uses additional library – we import Python’s re library, which allows us to use regular expressions within our code.
 
 After regular string is passed to internal function NaiveCr(), two nested loops compare substring, starting from size of 1. With additional use of regular expressions, it is easier to compare the substring with the whole sequence. After maximum comparison is made, function will print maximal repeated substring.
 Main module
