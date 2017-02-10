@@ -1,7 +1,8 @@
 # TRiWS
 Tandem Repeats in Weighted Sequences
 
-Below are extracts from my MSc Individual Project at King's College London 
+Below are extracts from my MSc Individual Project Report (King's College London) 
+(Full report available at http://bit.ly/ASMSc)
 
 
 "Tandem repeat is a consecutively repeated string which is not empty. For e.g. www, 0101, and
